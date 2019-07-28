@@ -1,0 +1,511 @@
+body {
+    background-color: #d0dbed;
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    display: flex;
+}
+
+input {
+    border: 0;
+}
+
+.num {
+    position: absolute;
+    top: -45%;
+    background-color: red;
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+}
+
+.myver {
+    left: 85%;
+}
+
+.mycor {
+    left: 89%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+.RegForm {
+    padding-top: 10px;
+}
+
+.RegForm p {
+    margin: 0;
+    margin-top: 4px;
+    margin-bottom: 3px;
+}
+
+.RegForm input {
+    width: 18%;
+    height: 20px;
+    margin-right: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.bar {
+    background-color: #e3e4e5;
+    height: 7.5vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+}
+
+.logregarea {
+    text-align: right;
+    padding-right: 1%;
+    display: flex;
+    flex-direction: row;
+}
+
+.lgtarea a {
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    height: 30px;
+    text-align: center;
+    margin-right: 6px;
+    color: white;
+    background-color: blue;
+    position: relative;
+    border-radius: 5px;
+    font-weight: 600;
+    box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.75);
+}
+
+.lgtarea a:hover {
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.75);
+}
+
+.lgtarea {
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.minipic {
+    width: 10%;
+}
+
+.statsarea {
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    justify-content: center;
+    width: 72vw;
+    height: 3vh;
+    margin-top: 0.6%;
+}
+
+.stats {
+    font-size: 1em;
+    width: 100%;
+    text-align: center;
+    align-self: center;
+}
+
+.foot {
+    height: 3%;
+    font-size: 1.6em;
+    width: 100vw;
+    background-color: #e3e4e5;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: absolute;
+    bottom: 0;
+    border-top: 1px solid black;
+    padding-right: 3%;
+    padding-bottom: 3px;
+}
+
+.foot p {
+    padding-top: 4px;
+    margin: 0;
+    font-size: 15px;
+}
+
+.searcharea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90vw;
+    height: 87vh;
+    margin-top: 50px;
+}
+
+.searchbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 80vw;
+}
+
+.searchinput {
+    margin-left: 1%;
+    margin-right: 1%;
+    text-align: center;
+    font-size: 0.8em;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    height: 120%;
+    width: 100%;
+}
+
+.resultswindow {
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 90vw;
+    height: 84%;
+}
+
+.resultswindow p {
+    font-size: 20px;
+}
+
+.verbswindow {
+    width: 100%;
+    height: 60%;
+    overflow-y: scroll;
+    border-right: 1px solid black;
+    background-color: white;
+    line-height: 1px;
+    padding: 0;
+    padding-left: 10px;
+}
+
+.synonymswindow {
+    width: 100%;
+    height: 60%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border-right: 1px solid black;
+    background-color: white;
+    line-height: 1px;
+    padding: 0;
+    padding-left: 10px;
+}
+
+.transswindow {
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.middlewindow {
+    position: relative;
+    line-height: 1px;
+    padding: 0;
+    width: 45%;
+    height: 100%;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    background-color: white;
+}
+
+.exampleswindow {
+    height: 50%;
+}
+
+.transswindow {
+    height: 50%;
+}
+
+.morereulultswindow {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 20%;
+    height: 100%;
+}
+
+.more {
+    line-height: 10px;
+    padding: 0;
+    padding-left: 10px;
+    border-left: 1px solid black;
+    background-color: white;
+    width: 100%;
+    height: 30%;
+}
+
+.selected {
+    background-color: green;
+    color: white;
+}
+
+.searcharea p {
+    padding: 3px;
+    line-height: 20px;
+    margin: 0;
+    width: 95%;
+}
+
+.verbswindow p:hover {
+    color: white;
+    background-color: #374863;
+}
+
+.btn {
+    box-shadow: 4px 5px 5px 0px rgba(0, 0, 0, 0.75);
+    cursor: pointer;
+    position: absolute;
+    top: 14%;
+    width: 20%;
+    background-color: white;
+    color: blue;
+    height: 2.5%;
+    border: 0px;
+    font-size: 0.8em;
+    border-radius: 20px;
+    font-weight: 600;
+}
+.btn1 {
+    left: 25%;
+    background-color: yellow;
+    color: black;
+}
+
+.btn2 {
+    background-color: blue;
+    color: white;
+    left: 55%;
+}
+.btn:hover {
+    box-shadow: 4px 9px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.uploader-enter {
+    opacity: 0;
+    background-color: #9612dd;
+    transform: scale(0.7);
+}
+.uploader-enter-active {
+    opacity: 1;
+    background-color: #96b2dd;
+    transform: translateX(0);
+    transition: opacity 1000ms, transform 1000ms, background-color 1000ms;
+}
+.uploader-exit {
+    background-color: #96b2dd;
+    opacity: 1;
+}
+.uploader-exit-active {
+    opacity: 0;
+    background-color: #9612dd;
+    transform: scale(0.7);
+    transition: opacity 100ms, transform 100ms, background-color 100ms;
+}
+
+.verform {
+    text-align: left;
+    padding-left: 20px;
+    border-radius: 30px;
+    position: absolute;
+    width: 60vw;
+    height: 60vh;
+    top: 17%;
+    left: 20%;
+    background-color: #d0dbed;
+    border: 4px solid black;
+    box-shadow: 15px 9px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.verbform-enter {
+    opacity: 0;
+    transform: scale(0.7);
+}
+.verbform-enter-active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 1000ms, transform 1000ms;
+}
+.verbform-exit {
+    opacity: 1;
+}
+.verbform-exit-active {
+    opacity: 0;
+    transform: scale(0.7);
+    transition: opacity 100ms, transform 100ms;
+}
+
+.btn-enter {
+    opacity: 0;
+    transform: scale(0.7);
+}
+.btn-enter-active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 1000ms, transform 1000ms;
+}
+.btn-exit {
+    opacity: 1;
+}
+.btn-exit-active {
+    opacity: 0;
+    transform: scale(0.7);
+    transition: opacity 100ms, transform 100ms;
+}
+
+.shortmassage-enter {
+    opacity: 0;
+    transform: scale(0.7);
+}
+.shortmassage-enter-active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 2000ms, transform 2000ms;
+}
+.shortmassage-exit {
+    opacity: 1;
+}
+.shortmassage-exit-active {
+    opacity: 0;
+    transform: scale(0.7);
+    transition: opacity 100ms, transform 100ms;
+}
+
+.form {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    line-height: 10px;
+    flex-direction: column;
+}
+
+.form input {
+    margin: 5px;
+    align-self: center;
+    width: 35%;
+    height: 20px;
+    font-size: 20px;
+    border: 1px solid black;
+}
+
+.form button {
+    align-self: center;
+    width: 30%;
+    border: 1px solid black;
+}
+
+.adminlogo {
+    width: 30px;
+    left: -3%;
+    top: -34%;
+    height: 13px;
+    font-size: 10px;
+}
+
+.ownverbs {
+    overflow-y: scroll;
+    margin-top: 1%;
+    padding: 0;
+    width: 99%;
+    overflow-x: hidden;
+    height: 80%;
+    border: 2px solid black;
+}
+
+.ownverb:nth-child(1) {
+    background-color: black;
+    color: white;
+}
+
+.ownverb {
+    border-bottom: 1px solid black;
+    font-weight: 500;
+    text-align: left;
+    display: grid;
+    grid-template-columns: 10% 28% 8% 8% 8% 15% 15% 15%;
+}
+
+.contactform {
+    display: flex;
+    flex-direction: column;
+}
+
+.allownverbs {
+    overflow-x: hidden;
+    margin-top: 1%;
+    padding: 0;
+    width: 99%;
+    height: 80%;
+    border: 2px solid black;
+    overflow-y: scroll;
+}
+
+.allownverb:nth-child(1) {
+    background-color: black;
+    color: white;
+}
+
+.allownverb {
+    border-bottom: 1px solid black;
+    font-weight: 500;
+    text-align: left;
+    display: grid;
+    grid-template-columns: 10% 8% 30% 8% 8% 8% 12% 15%;
+}
+
+.users {
+    overflow-x: hidden;
+    margin-top: 1%;
+    padding: 0;
+    width: 99%;
+    height: 80%;
+    border: 2px solid black;
+    overflow-y: scroll;
+}
+
+.user:nth-child(1) {
+    background-color: black;
+    color: white;
+}
+
+h1 {
+    margin: 0;
+}
+
+.user {
+    border-bottom: 1px solid black;
+    font-weight: 500;
+    text-align: left;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+}
+
+.messages {
+    overflow-x: hidden;
+    padding: 0;
+    width: 99%;
+    height: 80%;
+    border: 2px solid black;
+    overflow-y: scroll;
+}
+
+.message:nth-child(1) {
+    background-color: black;
+    color: white;
+}
+
+.message {
+    border-bottom: 1px solid black;
+    font-weight: 500;
+    text-align: left;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+}
