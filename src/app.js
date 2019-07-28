@@ -71,9 +71,9 @@ class App extends React.Component {
                                         case "/register":
                                             return <Regis />;
                                         case "/contact":
-                                            return <Logout />;
+                                            return <Login />;
                                         case "/about":
-                                            return <Logout />;
+                                            return <Login />;
                                         case "/in":
                                             return <Logout />;
                                         case "/profile":
