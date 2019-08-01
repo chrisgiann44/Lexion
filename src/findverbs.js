@@ -370,7 +370,6 @@ class Findverbs extends React.Component {
 }
 
 const mapStateToProps = state => {
-    console.log(state);
     return {
         state
     };

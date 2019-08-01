@@ -50,7 +50,13 @@ class App extends React.Component {
                                         cursor: "pointer"
                                     }}
                                     className="miniprof"
-                                    onClick={() => history.push("/in")}
+                                    onClick={() => {
+                                        if (this.props.state.user.data.id) {
+                                            history.push("/in");
+                                        } else {
+                                            history.push("/welcome");
+                                        }
+                                    }}
                                 >
                                     <img
                                         style={{
@@ -71,9 +77,17 @@ class App extends React.Component {
                                         case "/register":
                                             return <Regis />;
                                         case "/contact":
-                                            return <Login />;
+                                            if (this.props.state.user.data.id) {
+                                                return <Logout />;
+                                            } else {
+                                                return <Login />;
+                                            }
                                         case "/about":
-                                            return <Login />;
+                                            if (this.props.state.user.data.id) {
+                                                return <Logout />;
+                                            } else {
+                                                return <Login />;
+                                            }
                                         case "/in":
                                             return <Logout />;
                                         case "/profile":
